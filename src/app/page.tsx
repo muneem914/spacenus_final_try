@@ -17,7 +17,7 @@ export default function HomePage() {
 
   return (
     <StoreProvider>
-      <div className="mainContainer">
+      <div className="mainContainer overflow-y-hidden">
         <nav className="bg-white shadow-sm relative z-400">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex justify-between h-16">
