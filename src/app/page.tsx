@@ -16,7 +16,7 @@ export default function HomePage() {
 
   return (
       <div className="mainContainer">
-        <nav className="bg-white shadow-lg">
+        <nav className="bg-white shadow-lg custom_nav">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex justify-between h-16">
               <div className="flex items-center">

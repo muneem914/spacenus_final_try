@@ -165,7 +165,8 @@ export default function MapComponent({ searchQuery }: MapComponentProps) {
     <MapContainer
       center={[51.505, -0.09]}
       zoom={13}
-      style={{ height: "80vh", width: "100%" }}
+      className="map_container"
+      // style={{ height: "80vh", width: "100%" }}
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
