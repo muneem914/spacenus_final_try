@@ -2,7 +2,6 @@
 
 import dynamic from "next/dynamic";
 import PolygonList from "@/components/PolygonList";
-import StoreProvider from "@/app/providers";
 import { useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
 
@@ -16,9 +15,8 @@ export default function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <StoreProvider>
-      <div className="mainContainer overflow-y-hidden">
-        <nav className="bg-white shadow-sm relative z-400">
+      <div className="mainContainer">
+        <nav className="bg-white shadow-lg">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex justify-between h-16">
               <div className="flex items-center">
@@ -141,6 +139,5 @@ export default function HomePage() {
           )}
         </main>
       </div>
-    </StoreProvider>
   );
 }
